@@ -156,4 +156,4 @@ docs/
 
 - Semantic Versioning 2.0.0
 
-Plano de Configuração - Plataforma Jogos UnB
+- Plano de Configuração - Plataforma Jogos UnB
