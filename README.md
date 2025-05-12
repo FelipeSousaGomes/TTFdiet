@@ -61,3 +61,99 @@ Este documento tem como objetivo orientar os integrantes e colaboradores do proj
 - Exemplo:  
   ```bash
   git commit -m "Create user login screen"
+ - Commits colaborativos devem usar --author ou -s:
+ - git commit -m "Refactor planner engine" --author="Tiago Marques <tiago@email.com>"
+ou
+ - git commit -s -m "Fix nutritional calculator rounding bug"
+### 4.2 - Política de Branches
+- A main (ou master) conterá apenas versões estáveis.
+
+- A branch devel conterá o código de desenvolvimento.
+
+- Nenhum commit direto será feito nas branches main ou devel.
+
+- Novas branches devem ser criadas a partir da devel.
+
+### 4.3 - Padrões para Criação e Uso de Branches
+Seguindo o modelo GitFlow, utilize os seguintes padrões:
+
+### 4.3.1 - Casos de Uso
+- Prefixo: UC_
+
+- Formato: UC_RegisterUser
+
+### 4.3.2 - Histórias de Usuário
+- Prefixo: US_
+
+- Formato: US_CalculateMacros
+
+### 4.3.3 - Correções e Configurações
+- Prefixo: FIX_
+
+- Formato: FIX_FixLoginBug
+
+### 4.3.4 - Issues
+- Prefixo: ISSUE_XX_
+
+- Formato: ISSUE_08_FixConnectionWithDatabase
+
+### 4.4 - Política de Aprovação
+- Pull requests devem ser revisados por outro membro da equipe.
+
+- A aprovação requer:
+
+- Build "passing" no Travis CI.
+
+- Análise positiva nas ferramentas de qualidade.
+
+- Conformidade com o plano de testes e estilo de código.
+
+### 4.5 - Versionamento de Código
+- Adota-se o Semantic Versioning 2.0.0:
+
+MAJOR.MINOR.PATCH
+MAJOR: alterações incompatíveis.
+
+MINOR: novas funcionalidades compatíveis.
+
+PATCH: correções de bugs compatíveis.
+
+### 5 - Repositório de Documentação
+- A documentação será mantida na pasta /docs ou em um repositório dedicado.
+- Estrutura sugerida:
+
+docs/
+├── plano_gerenciamento_configuracao.md
+├── requisitos/
+│   ├── requisitos_funcionais.md
+│   └── requisitos_nao_funcionais.md
+├── diagramas/
+│   └── arquitetura.drawio
+└── atas/
+    └── ata_reuniao_2025-04-10.md
+    
+### 5.1 - Versionamento de Documentos
+- Versão no formato MAJOR.MINOR.
+- Exemplo:
+
+- Correção leve → incrementa MINOR
+
+- Adição/modificação relevante → incrementa MAJOR
+
+### 6 - Monitoramento e Controle
+- A equipe de gerenciamento é responsável por:
+
+- Garantir conformidade com este plano.
+
+- Orientar contribuintes quanto ao uso correto do repositório.
+
+- Avaliar pull requests e padrões de qualidade.
+
+- Remover ou ajustar conteúdo fora dos padrões.
+
+### 7 - Referências
+- PMI. Um guia do conhecimento em gerenciamento de projetos – PMBOK®, 5ª ed., 2013.
+
+- Semantic Versioning 2.0.0
+
+Plano de Configuração - Plataforma Jogos UnB
