@@ -4,7 +4,7 @@
 
 | Data       | Versão | Descrição                            | Autor                |
 |------------|--------|--------------------------------------|----------------------|
-| 12/05/2025 | 1.0    | Criação do plano de configuração     | Felipe Sousa Gomes   |
+| 06/05/2025 | 1.0    | Criação do plano de configuração     | Felipe Sousa Gomes   |
 
 ---
 
